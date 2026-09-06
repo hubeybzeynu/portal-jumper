@@ -1,24 +1,40 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Dire Dawa Schools" },
+      {
+        name: "description",
+        content:
+          "Dire Dawa Schools portal — public site and all 8 school portals (super admin, admin, teacher, librarian, sub-admin, staff, student, parent).",
+      },
+      { property: "og:title", content: "Dire Dawa Schools" },
+      {
+        property: "og:description",
+        content: "Public site and all 8 school portals for Dire Dawa Schools.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
+// The PHP school site is snapshotted as static HTML under public/site/.
+// The home route embeds it full-screen so the preview shows the real site.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <iframe
+      src="/site/index.html"
+      title="Dire Dawa Schools"
+      style={{
+        position: "fixed",
+        inset: 0,
+        width: "100%",
+        height: "100%",
+        border: "none",
+      }}
+    />
   );
 }
