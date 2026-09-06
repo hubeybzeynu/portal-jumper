@@ -1,0 +1,74 @@
+﻿﻿<br />
+<b>Warning</b>:  session_name(): Session name cannot be changed after headers have already been sent in <b>/tmp/dire/dire/includes/auth.php</b> on line <b>132</b><br />
+<br />
+<b>Warning</b>:  session_start(): Session cannot be started after headers have already been sent in <b>/tmp/dire/dire/includes/auth.php</b> on line <b>133</b><br />
+﻿<!DOCTYPE html><html lang="en"><head>
+    <script>
+    (function () {
+        try {
+            var t = localStorage.getItem("dire-theme");
+            if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+        } catch (e) {}
+    })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - /direschool</title>
+    <link rel="stylesheet" href="../assets/css/style.css%3Fv=1788562834.css">
+    <noscript><style>.reveal{opacity:1!important;transform:none!important;} .stagger-list .list-item,.stagger-list .feature-card{opacity:1!important;animation:none!important;}</style></noscript><style>
+.signas{position:relative;display:inline-block}
+.signas>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:.4rem;
+ padding:.45rem .85rem;border:1px solid currentColor;border-radius:999px;font-size:.85rem;font-weight:600;opacity:.9}
+.signas>summary::-webkit-details-marker{display:none}
+.signas>summary::after{content:"";border:4px solid transparent;border-top-color:currentColor;margin-top:3px}
+.signas[open]>summary{opacity:1}
+.signas-menu{position:absolute;right:0;top:calc(100% + .5rem);min-width:210px;z-index:200;
+ background:var(--card,#fff);color:var(--text,#111);border:1px solid rgba(0,0,0,.12);
+ border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.18);padding:.35rem;display:grid}
+.signas-menu a{display:flex;align-items:center;gap:.6rem;padding:.55rem .7rem;border-radius:8px;
+ font-size:.9rem;text-decoration:none;color:inherit}
+.signas-menu a:hover{background:rgba(0,0,0,.06)}
+.signas-menu a[aria-current]{font-weight:700}
+.signas-dot{width:9px;height:9px;border-radius:50%;flex:none}
+</style>
+</head><body>
+        <header class="site-header">
+        <div class="header-inner">
+            <a href="login.php.html" class="brand">
+                <span class="brand-icon"><img src="../shared-uploads/logo.png" alt="Logo" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></span>
+                <span>/direschool</span>
+            </a>
+            <nav class="main-nav">
+                                    <a href="login.php.html">Dashboard</a>
+                    <a href="classmates.php.html">Classmates</a>
+                    <a href="textbooks.php.html">Textbooks</a>
+                    <a href="report-card.php.html">Report Card</a>
+                    <a href="news.php.html">News</a>
+                    <a href="settings.php.html">Settings</a>
+                    <a href="leave-school.php.html">Leave School</a>
+                    <a href="http://127.0.0.1:8899/direschool-student/logout.php">Log out</a>
+                                <button type="button" class="theme-toggle" onclick="toggleSiteTheme()"><span class="theme-toggle-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg></span></button>
+            </nav>
+        </div>
+    </header>
+    <main class="page-content">
+    
+<div class="welcome-hero">
+    <div class="welcome-icon"><svg style="width:34px;height:34px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="5" rx="1.5"/><rect x="13" y="10" width="8" height="11" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/></svg></div>
+    <h1>Welcome, Betelhem Alemu</h1>
+    <p>Kidist Theresa School &middot; Grade 9 / A</p></div>
+
+
+<div class="grid grid-4 stagger-list">
+    <a href="classmates.php.html" class="feature-card reveal"><div class="feature-icon"><svg style="width:22px;height:22px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/><path d="M22 8v6"/></svg></div><h3>My School</h3><p>See your classmates and browse other grades/sections.</p></a>
+    <a href="textbooks.php.html" class="feature-card reveal"><div class="feature-icon"><svg style="width:22px;height:22px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H12v16H5.5A1.5 1.5 0 0 1 4 18.5v-13Z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H12v16h6.5a1.5 1.5 0 0 0 1.5-1.5v-13Z"/></svg></div><h3>Text Books</h3><p>Browse and preview/download your grade's textbooks.</p></a>
+    <a href="report-card.php.html" class="feature-card reveal"><div class="feature-icon"><svg style="width:22px;height:22px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M12 20V4M20 20v-7"/><path d="M4 20h16"/></svg></div><h3>Report Card</h3><p>Marks, conduct and attendance from your teacher.</p></a>
+        <a href="news.php.html" class="feature-card reveal"><div class="feature-icon"><svg style="width:22px;height:22px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="13" height="15" rx="1.5"/><path d="M16 8.5h5v9a2 2 0 0 1-2 2h-3"/><path d="M6.5 9h6M6.5 12h6M6.5 15h4"/></svg></div><h3>News</h3><p>Announcements from your school.</p></a>
+    <a href="settings.php.html" class="feature-card reveal"><div class="feature-icon"><svg style="width:22px;height:22px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 3v2.4M12 18.6V21M21 12h-2.4M5.4 12H3M18 6l-1.7 1.7M7.7 16.3 6 18M18 18l-1.7-1.7M7.7 7.7 6 6"/></svg></div><h3>Settings</h3><p>Control whether others can see your age.</p></a>
+    <a href="leave-school.php.html" class="feature-card reveal"><div class="feature-icon"><svg style="width:22px;height:22px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h13l-3-3M20 17H7l3 3"/></svg></div><h3>Leave School</h3><p>Moving schools? Request approval before you transfer.</p></a></div>
+
+﻿    </main>
+        <footer class="site-footer" style="margin-top:40px;">
+        <p>&copy; 2026 /direschool &middot; Dire Dawa Education Bureau.</p>
+    </footer>
+        <script src="../assets/js/main.js%3Fv=1788479326"></script></body></html>
