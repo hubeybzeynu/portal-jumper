@@ -53,44 +53,25 @@
 
 
     <div class="btn-row" style="justify-content:center; margin-bottom:24px;">
-        <a class="btn " href="register.php%3Fmode=new.html">New Student</a>
-        <a class="btn btn-outline" href="register.php%3Fmode=transfer.html">Transfer — I Have a Student ID</a>
+        <a class="btn btn-outline" href="register.php%3Fmode=new.html">New Student</a>
+        <a class="btn " href="register.php%3Fmode=transfer.html">Transfer — I Have a Student ID</a>
     </div>
 
             <div class="card form-narrow reveal">
-                        <form method="post" action="register.php.html">
-                <input type="hidden" name="mode" value="new">
+                        <p class="help-text" style="margin-top:0;">You must already have an approved "Leave School" request from your old school before this will work.</p>
+            <form method="post" action="register.php.html">
+                <input type="hidden" name="mode" value="transfer">
+                <div class="field"><label>Your Existing Student ID</label><input type="text" name="student_no" required value=""></div>
                 <div class="field">
-                    <label for="school_id">School</label>
-                    <select id="school_id" name="school_id" required>
+                    <label>School You're Joining</label>
+                    <select name="to_school_id" required>
                         <option value="">-- Select School --</option>
                                                     <option value="1">Kidist Theresa School</option>
                                                     <option value="2">Sabian Secondary School</option>
                                             </select>
                 </div>
-                <div class="field"><label for="full_name">Full Name</label><input type="text" id="full_name" name="full_name" required></div>
-                <div class="field"><label for="english_name">English Name (optional)</label><input type="text" id="english_name" name="english_name"></div>
-                <div class="grid grid-2">
-                    <div class="field">
-                        <label for="gender">Gender</label>
-                        <select id="gender" name="gender">
-                            <option value="">--</option>
-                            <option value="M">Male</option>
-                            <option value="F">Female</option>
-                        </select>
-                    </div>
-                    <div class="field"><label for="age">Age</label><input type="number" id="age" name="age"></div>
-                </div>
-                <div class="field"><label for="grade">Grade you're joining</label><input type="text" id="grade" name="grade" required placeholder="e.g. 9"></div>
-                <div class="grid grid-2">
-                    <div class="field"><label for="kebele">Kebele</label><input type="text" id="kebele" name="kebele"></div>
-                    <div class="field"><label for="house_no">House No.</label><input type="text" id="house_no" name="house_no"></div>
-                </div>
-                <div class="grid grid-2">
-                    <div class="field"><label for="password">Password</label><input type="password" id="password" name="password" required></div>
-                    <div class="field"><label for="confirm_password">Confirm Password</label><input type="password" id="confirm_password" name="confirm_password" required></div>
-                </div>
-                <button type="submit" class="btn btn-full">Submit Registration</button>
+                <div class="field"><label>Reason for Transfer</label><textarea name="reason" required></textarea></div>
+                <button type="submit" class="btn btn-full">Submit Transfer Request</button>
             </form>
         </div>
     

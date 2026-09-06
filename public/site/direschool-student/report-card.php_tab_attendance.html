@@ -46,7 +46,7 @@
                     <a href="news.php.html">News</a>
                     <a href="settings.php.html">Settings</a>
                     <a href="leave-school.php.html">Leave School</a>
-                    <a href="#">Log out</a>
+                    <a href="http://127.0.0.1:8899/direschool-student/logout.php">Log out</a>
                                 <button type="button" class="theme-toggle" onclick="toggleSiteTheme()"><span class="theme-toggle-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg></span></button>
             </nav>
         </div>
@@ -59,101 +59,19 @@
     <p>Marks, conduct and attendance — all in one place.</p></div><p class="breadcrumb"><a href="login.php.html">Dashboard</a> &raquo; Report Card</p>
 
 <div class="btn-row" style="margin-bottom:20px;">
-    <a class="btn " href="report-card.php%3Ftab=marks.html">Marks</a>
+    <a class="btn btn-outline" href="report-card.php%3Ftab=marks.html">Marks</a>
     <a class="btn btn-outline" href="report-card.php%3Ftab=conduct.html">Conduct</a>
-    <a class="btn btn-outline" href="report-card.php%3Ftab=attendance.html">Attendance</a></div>
+    <a class="btn " href="report-card.php%3Ftab=attendance.html">Attendance</a></div>
 
-                    <div class="card reveal">
-            <table class="data-table">
-                <tr><th style="text-align:left;">Subject</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Average</th></tr>
-                                                        <tr>
-                        <td class="subject-name">Amharic</td>
-                        <td>88</td>
-                        <td>90</td>
-                        <td>85</td>
-                        <td>92</td>
-                        <td>88.8</td>
-                    </tr>
-                                                        <tr>
-                        <td class="subject-name">English</td>
-                        <td>80</td>
-                        <td>82</td>
-                        <td>85</td>
-                        <td>88</td>
-                        <td>83.8</td>
-                    </tr>
-                                                        <tr>
-                        <td class="subject-name">Mathematics</td>
-                        <td>75</td>
-                        <td>78</td>
-                        <td>80</td>
-                        <td>85</td>
-                        <td>79.5</td>
-                    </tr>
-                                                        <tr>
-                        <td class="subject-name">General Science</td>
-                        <td>90</td>
-                        <td>88</td>
-                        <td>91</td>
-                        <td>93</td>
-                        <td>90.5</td>
-                    </tr>
-                                                        <tr>
-                        <td class="subject-name">Social Studies</td>
-                        <td>84</td>
-                        <td>86</td>
-                        <td>88</td>
-                        <td>90</td>
-                        <td>87.0</td>
-                    </tr>
-                                                        <tr>
-                        <td class="subject-name">Citizenship Education</td>
-                        <td>95</td>
-                        <td>94</td>
-                        <td>96</td>
-                        <td>97</td>
-                        <td>95.5</td>
-                    </tr>
-                                                        <tr>
-                        <td class="subject-name">Performing &amp; Visual Arts</td>
-                        <td>89</td>
-                        <td>90</td>
-                        <td>91</td>
-                        <td>92</td>
-                        <td>90.5</td>
-                    </tr>
-                                                        <tr>
-                        <td class="subject-name">Information Technology</td>
-                        <td>92</td>
-                        <td>91</td>
-                        <td>93</td>
-                        <td>94</td>
-                        <td>92.5</td>
-                    </tr>
-                                                        <tr>
-                        <td class="subject-name">Health &amp; Physical Education</td>
-                        <td>96</td>
-                        <td>95</td>
-                        <td>97</td>
-                        <td>98</td>
-                        <td>96.5</td>
-                    </tr>
-                                                        <tr>
-                        <td class="subject-name">Career &amp; Technical Education</td>
-                        <td>87</td>
-                        <td>88</td>
-                        <td>89</td>
-                        <td>90</td>
-                        <td>88.5</td>
-                    </tr>
-                            </table>
-            <p style="margin-top:14px;">
-                Result:
-                <span class="tag tag-promoted">Promoted</span>
-                            </p>
-        </div>
-    
-
+    <div class="grid grid-2 stagger-list" style="margin-bottom:20px;">
+        <div class="stat-box"><div class="stat-value" style="color:#17A673;">0</div><div class="stat-label">Days Present (last 60)</div></div>
+        <div class="stat-box"><div class="stat-value" style="color:#E5484D;">0</div><div class="stat-label">Days Absent (last 60)</div></div>
+    </div>
+    <div class="card table-scroll reveal">
+        <table class="data-table">
+            <tr><th>Date</th><th>Status</th></tr>
+                        <tr><td colspan="2">No attendance recorded yet.</td></tr>        </table>
+    </div>
 ﻿    </main>
         <footer class="site-footer" style="margin-top:40px;">
         <p>&copy; 2026 /direschool &middot; Dire Dawa Education Bureau.</p>
