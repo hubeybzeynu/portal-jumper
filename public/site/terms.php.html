@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script>
+    (function () {
+        try {
+            var t = localStorage.getItem("dire-theme");
+            if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+        } catch (e) {}
+    })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms &amp; Conditions - /direschool</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <noscript><style>.reveal{opacity:1!important;transform:none!important;} .stagger-list .list-item,.stagger-list .feature-card{opacity:1!important;animation:none!important;}</style></noscript><style>
+.signas{position:relative;display:inline-block}
+.signas>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:.4rem;
+ padding:.45rem .85rem;border:1px solid currentColor;border-radius:999px;font-size:.85rem;font-weight:600;opacity:.9}
+.signas>summary::-webkit-details-marker{display:none}
+.signas>summary::after{content:"";border:4px solid transparent;border-top-color:currentColor;margin-top:3px}
+.signas[open]>summary{opacity:1}
+.signas-menu{position:absolute;right:0;top:calc(100% + .5rem);min-width:210px;z-index:200;
+ background:var(--card,#fff);color:var(--text,#111);border:1px solid rgba(0,0,0,.12);
+ border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,.18);padding:.35rem;display:grid}
+.signas-menu a{display:flex;align-items:center;gap:.6rem;padding:.55rem .7rem;border-radius:8px;
+ font-size:.9rem;text-decoration:none;color:inherit}
+.signas-menu a:hover{background:rgba(0,0,0,.06)}
+.signas-menu a[aria-current]{font-weight:700}
+.signas-dot{width:9px;height:9px;border-radius:50%;flex:none}
+</style>
+</head><body>
+        <div class="utility-strip"><div class="utility-inner">
+        <a href="school.php.html">Schools</a>
+        <a href="report-card.php.html">Report Card</a>
+        <a href="exam-result.php.html">Exam Result</a>
+        <a href="ministry-result.php.html">Grade 8 Result</a>
+        <a href="portals.php.html">Portals</a>
+    </div></div>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.php.html" class="brand">
+                <span class="brand-icon"><img src="shared-uploads/logo.png" alt="Logo" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></span>
+                <span>/direschool</span>
+            </a>
+            <div class="header-actions">
+                <details class="signas"><summary class="signas-btn">Sign As</summary><div class="signas-menu"><a href="direschool-superadmin/index.php.html"><span class="signas-dot" style="background:#D9A94E"></span>Super Admin</a><a href="direschool-admin/index.php.html"><span class="signas-dot" style="background:#4F7CFF"></span>Admin</a><a href="direschool-teacher/index.php.html"><span class="signas-dot" style="background:#8B5CF6"></span>Teacher</a><a href="direschool-librarian/index.php.html"><span class="signas-dot" style="background:#EC4899"></span>Librarian</a><a href="direschool-subadmin/index.php.html"><span class="signas-dot" style="background:#28C7C7"></span>Sub Admin</a><a href="direschool-staff/index.php.html"><span class="signas-dot" style="background:#64748B"></span>Staff</a><a href="direschool-student/index.php.html"><span class="signas-dot" style="background:#F59E0B"></span>Student</a><a href="direschool-parent/index.php.html"><span class="signas-dot" style="background:#22C55E"></span>Parent</a></div></details>                <button class="menu-trigger" id="menuTrigger" type="button" aria-label="Open menu">
+                    <span class="mt-lines"><span></span><span></span></span> Menu
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="mega-menu" id="megaMenu" aria-hidden="true">
+        <div class="mm-inner">
+            <div class="mm-top">
+                <span class="mm-brand">/direschool</span>
+                <button class="mm-close" id="mmClose" type="button" aria-label="Close menu">&times;</button>
+            </div>
+            <div class="mm-grid">
+                <div class="mm-col">
+                    <h4>Platform</h4>
+                    <a href="index.php.html"><span class="idx">01</span> Home</a>
+                    <a href="school.php.html"><span class="idx">02</span> Browse Schools</a>
+                    <a href="portals.php.html"><span class="idx">03</span> Login Portals</a>
+                </div>
+                <div class="mm-col">
+                    <h4>Lookup</h4>
+                    <a href="report-card.php.html"><span class="idx">04</span> Report Card</a>
+                    <a href="exam-result.php.html"><span class="idx">05</span> Exam Result</a>
+                    <a href="ministry-result.php.html"><span class="idx">06</span> Grade 8 (Ministry)</a>
+                </div>
+                <div class="mm-col">
+                    <h4>Roles</h4>
+                    <a href="direschool-superadmin/index.php.html"><span class="idx">A</span> Super Admin</a>
+                    <a href="direschool-admin/index.php.html"><span class="idx">B</span> Admin</a>
+                    <a href="direschool-teacher/index.php.html"><span class="idx">C</span> Teacher</a>
+                    <a href="direschool-student/index.php.html"><span class="idx">D</span> Student</a>
+                    <a href="direschool-parent/index.php.html"><span class="idx">E</span> Parent</a>
+                </div>
+                <div class="mm-col">
+                    <h4>Connect</h4>
+                    <a href="about.php.html"><span class="idx">07</span> About</a>
+                    <a href="contact.php.html"><span class="idx">08</span> Contact</a>
+                    <a href="faq.php.html"><span class="idx">09</span> FAQ</a>
+                </div>
+            </div>
+            <div class="mm-bottom">
+                <span class="theme-toggle" onclick="toggleSiteTheme()"><span class="theme-toggle-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg></span> Toggle theme</span>
+            </div>
+        </div>
+    </div>
+    <main class="page-content">
+    
+<div class="welcome-hero" style="padding-top:20px;">
+    <div class="welcome-icon"><svg style="width:34px;height:34px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v5h5M8 12.5h8M8 16h6"/></svg></div>
+    <h1>Terms &amp; Conditions</h1></div>
+
+<div class="card reveal">
+    <p>/direschool is provided for use by schools, staff, students and parents within the Dire Dawa Administration
+       Education Bureau network. Accounts are for the personal use of the individual they were issued to and
+       should not be shared.</p>
+    <p>Academic records displayed here (report cards, exam results, Ministry results, attendance and conduct) are
+       entered by school staff and are provided for informational purposes; a school's official paper or stamped
+       records remain the authoritative source where a dispute arises.</p>
+    <p>Misuse of the system — including attempting to falsify records, impersonate another student, or bypass the
+       school-transfer verification process — may result in the account being banned and reported to the relevant
+       school authority.</p></div>
+
+    </main>
+        <footer class="site-footer-full">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand" style="color:#fff;">
+                        <span class="brand-icon"><img src="shared-uploads/logo.png" alt="Logo" style="width:100%;height:100%;object-fit:contain;border-radius:4px;"></span>
+                        <span>/direschool</span>
+                    </div>
+                    <p>Complete school management platform to handle admissions, attendance, exams, report cards and communication — all in one place.</p>
+                    <p class="footer-contact"> info@diredawaeducation.gov.et<br> +251 25 111 2233<br> Dire Dawa, Ethiopia</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Platform</h4>
+                    <a href="school.php.html">Browse Schools</a>
+                    <a href="portals.php.html">Login Portals</a>
+                    <a href="report-card.php.html">Report Card Lookup</a>
+                    <a href="exam-result.php.html">Exam Result Lookup</a>
+                    <a href="ministry-result.php.html">Ministry Result</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Students &amp; Staff</h4>
+                    <a href="direschool-student/index.php.html">Student Portal</a>
+                    <a href="direschool-student/register.php.html">Student Registration</a>
+                    <a href="direschool-parent/index.php.html">Parent Portal</a>
+                    <a href="direschool-admin/index.php.html">Staff Login</a>
+                    <a href="faq.php.html">FAQ</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="about.php.html">About</a>
+                    <a href="contact.php.html">Contact</a>
+                    <a href="terms.php.html">Terms &amp; Conditions</a>
+                    <a href="privacy.php.html">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-stats">
+                <span>2+ Schools</span>
+                <span>&bull;</span>
+                <span>3+ Students</span>
+                <span>&bull;</span>
+                <span>Serving Dire Dawa</span>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 /direschool &middot; Dire Dawa Administration Education Bureau. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+        <script src="assets/js/main.js"></script></body></html>
